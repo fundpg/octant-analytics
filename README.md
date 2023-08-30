@@ -16,3 +16,6 @@ We have created a way for users to visualize their impact through 2 metrics.
 We believe that our solution will increase the amount of GLM users stake as they are able to understand the impact of their contributions more easily. Furthermore, it would also decrease the likelihood of users unlocking their stake as they can understand the potential rewards lost by doing. 
 
 Effectively, this will increase the total amount of public goods funding in Octant.
+
+# Challenges
+We were initially intending to build a custom event listener to index the Lock and Unlock events. However, due to the design of the smart contract, the events being emitted do not have any indexes, making it impractical for the original design of our event listener. 
