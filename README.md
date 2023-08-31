@@ -34,3 +34,6 @@ We were initially intending to build a custom event listener to index the Lock a
 In digging through the Octant codebase, we saw that metric #1 of displaying the user's rewards has already been [implemented as backend code that works through querying the subgraph](https://gitlab.com/wildland/governance/octant/-/blob/master/backend/app/core/rewards.py), even though this is not yet implemented into the Octant frontend. 
 
 Hence, we decided to focus on metric #2 and built a proof-of-concept using Dune analytics to get the data, and a Figma prototype to illustrate how this might be integrated into the Octant app as a pop-up modal. 
+
+### Future Work
+We intend to support showing the estimated matched rewards before an Epoch ends. This gives an even more realistic idea of the benefits or costs associated with locking and unlocking GLM. 
