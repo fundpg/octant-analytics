@@ -1,6 +1,7 @@
--- This query first gets all the transactions from the user. 
+-- This query returns the nett GLM locked in the past days_passed_in_epoch days 
+-- It first gets all the transactions from the user. 
 -- Next, it sums up the lock amounts, and minuses the unlock amounts based on the method. 
--- This query takes in a {{user_address}} parameter and a {{days_passed_in_epoch}} parameter.
+-- This takes in a {{user_address}} parameter and a {{days_passed_in_epoch}} parameter.
 
 WITH AggregateSumOfLocksAndUnlocks AS (
 
